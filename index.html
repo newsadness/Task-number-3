@@ -42,72 +42,72 @@
                    <p style="text-indent:40px" class="text2">}</p>
                 <p class="text2">}</p>
             
-                <p class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
+                <p class="text2">class Pedal {</p>
+                   <p style="text-indent:40px" class="text2">private String type;</p>
+                   <p style="text-indent:40px" class="text2">public Pedal(String type) {</p>
+                      <p style="text-indent:80px" class="text2">this.type = type;</p>
+                   <p style="text-indent:40px" class="text2">}</p>
                    
-                   <p style="text-indent:40px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
+                   <p style="text-indent:40px" class="text2"> public void press() {</p>
+                      <p style="text-indent:80px" class="text2">System.out.println("Нажата педаль: " + type);</p>
+                   <p style="text-indent:40px" class="text2">}</p>
             
-                   <p style="text-indent:40px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
-                      <p style="text-indent:40px" class="text2"></p>
-                      <p style="text-indent:40px" class="text2"></p>
-                      <p style="text-indent:40px" class="text2"></p>
-                      <p style="text-indent:40px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
+                   <p style="text-indent:40px" class="text2">@Override</p>
+                   <p style="text-indent:40px" class="text2">public boolean equals(Object o) {</p>
+                      <p style="text-indent:80px" class="text2">if (this == o) return true;</p>
+                      <p style="text-indent:80px" class="text2">if (o == null || getClass() != o.getClass()) return false;</p>
+                      <p style="text-indent:80px" class="text2">Pedal pedal = (Pedal) o;</p>
+                      <p style="text-indent:80px" class="text2">return Objects.equals(type, pedal.type);</p>
+                   <p style="text-indent:40px" class="text2">}</p>
                    
-                   <p style="text-indent:40px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
+                   <p style="text-indent:40px" class="text2">@Override</p>
+                   <p style="text-indent:40px" class="text2">public int hashCode() {</p>
+                      <p style="text-indent:80px" class="text2">return Objects.hash(type);</p>
+                   <p style="text-indent:40px" class="text2">}</p>
 
-                   <p style="text-indent:40px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                          <p style="text-indent:120px" class="text2"></p>
-                          <p style="text-indent:120px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
-                <p class="text2"></p>
+                   <p style="text-indent:40px" class="text2">@Override</p>
+                   <p style="text-indent:40px" class="text2">public String toString() {</p>
+                      <p style="text-indent:80px" class="text2">return "Pedal{" +</p>
+                          <p style="text-indent:120px" class="text2">"type='" + type + '\'' +</p>
+                          <p style="text-indent:120px" class="text2">'}';</p>
+                   <p style="text-indent:40px" class="text2">}</p>
+                <p class="text2">}</p>
             
-                <p class="text2"></p>
-                <p class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p></br>
+                <p class="text2">// Класс Пианино</p>
+                <p class="text2">class Piano {</p>
+                   <p style="text-indent:40px" class="text2">private Key[] keys;</p>
+                   <p style="text-indent:40px" class="text2">private Pedal[] pedals;</p></br>
                     
-                   <p style="text-indent:40px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
+                   <p style="text-indent:40px" class="text2">public Piano(Key[] keys, Pedal[] pedals) {</p>
+                      <p style="text-indent:80px" class="text2">this.keys = keys;</p>
+                      <p style="text-indent:80px" class="text2">this.pedals = pedals;</p>
+                   <p style="text-indent:40px" class="text2">}</p>
                    
-                   <p style="text-indent:40px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
+                   <p style="text-indent:40px" class="text2">public void tune() {</p>
+                      <p style="text-indent:80px" class="text2">System.out.println("Пианино настроено.");</p>
+                   <p style="text-indent:40px" class="text2">}</p>
             
-                   <p style="text-indent:40px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                         <p style="text-indent:120px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
-                    <p style="text-indent:40px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                         <p style="text-indent:120px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                         <p style="text-indent:120px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
-                <p class="text2"></p>
-                <p class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
-                      <p style="text-indent:80px" class="text2"></p>
-                   <p style="text-indent:40px" class="text2"></p>
-                <p class="text2"></p>
+                   <p style="text-indent:40px" class="text2">public void play() {</p>
+                      <p style="text-indent:80px" class="text2">System.out.println("Игра на пианино.");</p>
+                      <p style="text-indent:80px" class="text2">for (Key key : keys) {</p>
+                         <p style="text-indent:120px" class="text2">key.press();</p>
+                      <p style="text-indent:80px" class="text2">}</p>
+                   <p style="text-indent:40px" class="text2">}</p>
+                   <p style="text-indent:40px" class="text2">public void pressKey(int index) {</p>
+                      <p style="text-indent:80px" class="text2">if (index >= 0 && index < keys.length) {</p>
+                         <p style="text-indent:120px" class="text2">keys[index].press();</p>
+                      <p style="text-indent:80px" class="text2">} else {</p>
+                         <p style="text-indent:120px" class="text2">System.out.println("Нет такой клавиши.");</p>
+                      <p style="text-indent:80px" class="text2">}</p>
+                   <p style="text-indent:40px" class="text2">}</p>
+                   <p style="text-indent:40px" class="text2">public void pressPedal(int index) {</p>
+                      <p style="text-indent:80px" class="text2">if (index >= 0 && index < pedals.length) {</p>
+                         <p style="text-indent:120px" class="text2">pedals[index].press();</p>
+                      <p style="text-indent:80px" class="text2">} else {</p>
+                         <p style="text-indent:120px" class="text2">System.out.println("Нет такой педали.");</p>
+                      <p style="text-indent:80px" class="text2">}</p>
+                   <p style="text-indent:40px" class="text2">}</p>
+             
 
 
 
