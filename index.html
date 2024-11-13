@@ -107,46 +107,36 @@
                          <p style="text-indent:120px" class="text2">System.out.println("Нет такой педали.");</p>
                       <p style="text-indent:80px" class="text2">}</p>
                    <p style="text-indent:40px" class="text2">}</p>
-             
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                   <p style="text-indent:40px" class="text2">@Override</p>
+                   <p style="text-indent:40px" class="text2">public boolean equals(Object o) {</p>
+                      <p style="text-indent:80px" class="text2">if (this == o) return true;</p>
+                      <p style="text-indent:80px" class="text2"> if (o == null || getClass() != o.getClass()) return false;</p>
+                      <p style="text-indent:80px" class="text2">Piano piano = (Piano) o;</p>
+                         <p style="text-indent:120px" class="text2">return Objects.equals(keys, piano.keys) && Objects.equals(pedals, piano.pedals);</p>
+                   <p style="text-indent:40px" class="text2">}</p>
+                   <p style="text-indent:40px" class="text2">@Override</p>
+                   <p style="text-indent:40px" class="text2">public int hashCode() {</p>
+                      <p style="text-indent:80px" class="text2">return Objects.hash(keys, pedals);</p>
+                   <p style="text-indent:40px" class="text2">}</p>
+                   <p style="text-indent:40px" class="text2">@Override</p>
+                   <p style="text-indent:40px" class="text2">public String toString() {</p>
+                      <p style="text-indent:80px" class="text2">return "Piano{" +</p>
+                         <p style="text-indent:120px" class="text2">"keys=" + keys.length +</p>
+                         <p style="text-indent:120px" class="text2">", pedals=" + pedals.length +</p>
+                         <p style="text-indent:120px" class="text2">'}';</p>
+                   <p style="text-indent:40px" class="text2">}</p>
+                <p class="text2">}</p>
+                <p class="text2">public class Mainpianino {</p>
+                   <p style="text-indent:40px" class="text2">public static void main(String[] args) {</p>
+                      <p style="text-indent:80px" class="text2">Key[] keys = {new Key("До"), new Key("Ре"), new Key("Ми"), new Key("Фа")};</p>
+                      <p style="text-indent:80px" class="text2">Pedal[] pedals = {new Pedal("Правая"), new Pedal("Левая")};</p>
+                      <p style="text-indent:80px" class="text2">Piano piano = new Piano(keys, pedals);</p>
+                      <p style="text-indent:80px" class="text2">piano.tune();</p>
+                      <p style="text-indent:80px" class="text2">piano.play();</p>
+                      <p style="text-indent:80px" class="text2">piano.pressKey(1);</p>
+                      <p style="text-indent:80px" class="text2">piano.pressPedal(0);</p>
+                   <p style="text-indent:40px" class="text2">}</p>
+                <p class="text2">}</p>
                 </td>
             
             
@@ -155,7 +145,7 @@
 <tr> 
     <td>
     <p class="text"> Скриншот результата </p>
-    <img class="img" src="https://github.com/newsadness/Task-number-2/blob/main/2.png?raw=true">
+    <img class="img" src="https://github.com/newsadness/Task-number-3/blob/main/3.png?raw=true">
     </td>
 </tr>
           <tr>
